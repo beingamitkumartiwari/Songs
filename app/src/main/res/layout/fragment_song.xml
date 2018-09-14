@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".SongFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivArtist"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSong"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center|start"
+            android:layout_marginStart="10dp"
+            android:text="@string/song_name"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivArtist" />
+
+        <TextView
+            android:id="@+id/tvSongName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center|start"
+            android:text=""
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toRightOf="@+id/tvSong"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivArtist" />
+
+        <TextView
+            android:id="@+id/tvArtist"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/allerta"
+            android:layout_marginStart="10dp"
+            android:gravity="center|start"
+            android:text="@string/artist_name"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSongName" />
+
+        <TextView
+            android:id="@+id/tvArtistName"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center|start"
+            android:text=""
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toRightOf="@+id/tvArtist"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSongName" />
+
+        <TextView
+            android:id="@+id/tvCollection"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/allerta"
+            android:layout_marginStart="10dp"
+            android:gravity="center|start"
+            android:text="@string/collection_name"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvArtist" />
+
+        <TextView
+            android:id="@+id/tvCollectionName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center|start"
+            android:text=""
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toRightOf="@+id/tvCollection"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvArtistName" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center|start"
+            android:text="@string/type"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCollectionName" />
+
+        <TextView
+            android:id="@+id/tvTypeName"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center|start"
+            android:text=""
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toRightOf="@+id/tvType"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCollectionName" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center|start"
+            android:text="@string/song_price"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvType" />
+
+        <TextView
+            android:id="@+id/tvTrackPrice"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center|start"
+            android:text=""
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toRightOf="@+id/tvPrice"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTypeName" />
+
+        <TextView
+            android:id="@+id/tvCollectionPrice"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center|start"
+            android:layout_marginStart="10dp"
+            android:text="@string/collection_price"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+
+        <TextView
+            android:id="@+id/tvCollectionPriceName"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center|start"
+            android:text=""
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toRightOf="@+id/tvCollectionPrice"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTrackPrice" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/allerta"
+            android:layout_marginStart="10dp"
+            android:gravity="center|start"
+            android:text="@string/release_date"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCollectionPrice" />
+
+        <TextView
+            android:id="@+id/tvReleaseDate"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center|start"
+            android:text=""
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintLeft_toRightOf="@+id/tvDate"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCollectionPriceName" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
